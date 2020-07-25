@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Teddy Bear</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="homework_2.css">
+    <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap" rel="stylesheet">
+    <script>
+        function order() {
+            alert('주문이 완료되었습니다');
+        }
+    </script>
+</head>
+<body>
+<div class="image">
+    <img src="bear01.jpg" alt="Teddy Bear"/>
+</div>
+<div class="details">
+    <div class="product-info">
+        <h1 class="product-name title">TEDDY BEAR</h1>
+        <p class="price">가격: 50,000원</p>
+        <p>실제 곰 사이즈와 비슷한 크고 푹신푹신한 곰돌이 인형. 귀여운 곰돌이의 친구가 되어주세요! </p>
+        <h1 class="order title">주문하기</h1>
+        <div class="form">
+            <!--주문자 이름-->
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <span class="input-group-text" id="inputGroup-sizing-default">주문자 이름</span>
+                </div>
+                <input type="text" class="form-control" aria-label="Default"
+                       aria-describedby="inputGroup-sizing-default">
+            </div>
+            <!--수량-->
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <label class="input-group-text" for="inputGroupSelect01">수량</label>
+                </div>
+                <select class="custom-select" id="inputGroupSelect01">
+                    <option selected>--수량을 선택하세요--</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                </select>
+            </div>
+            <!--주소-->
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <span class="input-group-text" id="inputGroup-sizing-default">주소</span>
+                </div>
+                <input type="text" class="form-control" aria-label="Default"
+                       aria-describedby="inputGroup-sizing-default">
+            </div>
+            <!--전화번호-->
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <span class="input-group-text" id="inputGroup-sizing-default">전화번호</span>
+                </div>
+                <input type="text" class="form-control" aria-label="Default"
+                       aria-describedby="inputGroup-sizing-default">
+            </div>
+
+        </div>
+        <!--주문하기 버튼-->
+        <button onclick="order()" type="button" class="btn btn-primary">주문하기</button>
+    </div>
+</div>
+</body>
+</html>

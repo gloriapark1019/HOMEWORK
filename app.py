@@ -33,10 +33,9 @@ def save_order():
 # 주문 목록보기(Read) API
 @app.route('/order', methods=['GET'])
 def view_orders():
-# 여길 채워나가세요!
 # mongoDB에서 id 값 제외한 데이터 조회하기
     result = list(db.order.find({}, {'_id': 0}))
-# order라는 키 값으로 정보 보내주기
+# orders라는 키 값으로 정보 보내주기
     return jsonify({'result': 'success', 'orders': result})
 
 
